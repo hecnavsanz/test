@@ -1,0 +1,159 @@
+services:
+  mdb-srv1:
+    build:
+      context: ubu-base
+    container_name: "${MDBSRV1_NAME}"
+    hostname: "${MDBSRV1_NAME}"
+    domainname: "${IMAGINA_DOMAIN}"
+    privileged: true
+    stop_signal: RTMIN+3
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1024M
+    restart: "no"
+    ports:
+      - "33061:3306"
+      - "33331:22"
+    networks:
+      imagina-net:
+        ipv4_address: "${MDBSRV1_IP_ADDR}" # check it's not already been used by other cntrs in other bridges
+        aliases:
+          - "${MDBSRV1_NAME}.${IMAGINA_DOMAIN}"
+    volumes:
+      - ../labs:/labs
+  mdb-srv2:
+    image: imagina-stack-mdb-srv1:latest
+    depends_on:
+      - mdb-srv1
+    container_name: "${MDBSRV2_NAME}"
+    hostname: "${MDBSRV2_NAME}"
+    domainname: "${IMAGINA_DOMAIN}"
+    privileged: true
+    stop_signal: RTMIN+3
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1024M
+    restart: "no"
+    ports:
+      - "33062:3306"
+      - "33332:22"
+    networks:
+      imagina-net:
+        ipv4_address: "${MDBSRV2_IP_ADDR}" # check it's not already been used by other cntrs in other bridges
+        aliases:
+          - "${MDBSRV2_NAME}.${IMAGINA_DOMAIN}"
+    volumes:
+      - ../labs:/labs
+  tmc-srv1:
+    image: imagina-stack-mdb-srv1:latest
+    depends_on:
+      - mdb-srv2
+    container_name: "${TMCSRV1_NAME}"
+    hostname: "${TMCSRV1_NAME}"
+    domainname: "${IMAGINA_DOMAIN}"
+    privileged: true
+    stop_signal: RTMIN+3
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1024M
+    restart: "no"
+    ports:
+      - "8081:8080"
+      - "33333:22"
+    networks:
+      imagina-net:
+        ipv4_address: "${TMCSRV1_IP_ADDR}" # check it's not already been used by other cntrs in other bridges
+        aliases:
+          - "${TMCSRV1_NAME}.${IMAGINA_DOMAIN}"
+    volumes:
+      - ../labs:/labs
+  tmc-srv2:
+    image: imagina-stack-mdb-srv1:latest
+    depends_on:
+      - tmc-srv1
+    container_name: "${TMCSRV2_NAME}"
+    hostname: "${TMCSRV2_NAME}"
+    domainname: "${IMAGINA_DOMAIN}"
+    privileged: true
+    stop_signal: RTMIN+3
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1024M
+    restart: "no"
+    ports:
+      - "8082:8080"
+      - "33334:22"
+    networks:
+      imagina-net:
+        ipv4_address: "${TMCSRV2_IP_ADDR}" # check it's not already been used by other cntrs in other bridges
+        aliases:
+          - "${TMCSRV2_NAME}.${IMAGINA_DOMAIN}"
+    volumes:
+      - ../labs:/labs
+  ngx-srv:
+    image: imagina-stack-mdb-srv1:latest
+    depends_on:
+      - tmc-srv2
+    container_name: "${NGXSRV_NAME}"
+    hostname: "${NGXSRV_NAME}"
+    domainname: "${IMAGINA_DOMAIN}"
+    privileged: true
+    stop_signal: RTMIN+3
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1024M
+    restart: "no"
+    ports:
+      - "8000:80"
+      - "4443:443"
+      - "33335:22"
+    networks:
+      imagina-net:
+        ipv4_address: "${NGXSRV_IP_ADDR}" # check it's not already been used by other cntrs in other bridges
+        aliases:
+          - "${NGXSRV_NAME}.${IMAGINA_DOMAIN}"
+    volumes:
+      - ../labs:/labs
+  dev-cli:
+    image: imagina-stack-mdb-srv1:latest
+    depends_on:
+      - ngx-srv
+    container_name: "${DEVCLI_NAME}"
+    hostname: "${DEVCLI_NAME}"
+    domainname: "${IMAGINA_DOMAIN}"
+    privileged: true
+    stop_signal: RTMIN+3
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1024M
+    restart: "no"
+    ports:
+      - "33336:22"
+    networks:
+      imagina-net:
+        ipv4_address: "${DEVCLI_IP_ADDR}" # check it's not already been used by other cntrs in other bridges
+        aliases:
+          - "${DEVCLI_NAME}.${IMAGINA_DOMAIN}"
+    volumes:
+      - ../labs:/labs
+networks:
+  imagina-net:
+    driver: bridge
+    attachable: true
+    name: global-bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: "${IMAGINA_SUBNET}"

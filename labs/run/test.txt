@@ -1,0 +1,139 @@
+/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home/bin/java \
+  -javaagent:
+    /Users/hectornavarro/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/223.8617.56/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49562:
+    /Users/hectornavarro/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/223.8617.56/IntelliJ IDEA CE.app/Contents/bin
+        -Dfile.encoding=UTF-8
+        -classpath /Users/hectornavarro/IdeaProjects/test/target/classes:
+                   /Users/hectornavarro/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.0.2/spring-boot-starter-data-jpa-3.0.2.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.0.2/spring-boot-starter-aop-3.0.2.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/spring-aop/6.0.4/spring-aop-6.0.4.jar:
+                   /Users/hectornavarro/.m2/repository/org/aspectj/aspectjweaver/1.9.19/aspectjweaver-1.9.19.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.0.2/spring-boot-starter-jdbc-3.0.2.jar:
+                   /Users/hectornavarro/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/spring-jdbc/6.0.4/spring-jdbc-6.0.4.jar:
+                   /Users/hectornavarro/.m2/repository/org/hibernate/orm/hibernate-core/6.1.6.Final/hibernate-core-6.1.6.Final.jar:
+                   /Users/hectornavarro/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:
+                   /Users/hectornavarro/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:
+                   /Users/hectornavarro/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:
+                   /Users/hectornavarro/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.2.Final/hibernate-commons-annotations-6.0.2.Final.jar:
+                   /Users/hectornavarro/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar:
+                   /Users/hectornavarro/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:
+                   /Users/hectornavarro/.m2/repository/net/bytebuddy/byte-buddy/1.12.22/byte-buddy-1.12.22.jar:
+                   /Users/hectornavarro/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:
+                   /Users/hectornavarro/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.1/jakarta.activation-api-2.1.1.jar:
+                   /Users/hectornavarro/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.1/jaxb-runtime-4.0.1.jar:
+                   /Users/hectornavarro/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.1/jaxb-core-4.0.1.jar:
+                   /Users/hectornavarro/.m2/repository/org/eclipse/angus/angus-activation/1.0.0/angus-activation-1.0.0.jar:
+                   /Users/hectornavarro/.m2/repository/org/glassfish/jaxb/txw2/4.0.1/txw2-4.0.1.jar:
+                   /Users/hectornavarro/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:
+                   /Users/hectornavarro/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.0/jakarta.inject-api-2.0.0.jar:
+                   /Users/hectornavarro/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/data/spring-data-jpa/3.0.1/spring-data-jpa-3.0.1.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/data/spring-data-commons/3.0.1/spring-data-commons-3.0.1.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/spring-orm/6.0.4/spring-orm-6.0.4.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/spring-context/6.0.4/spring-context-6.0.4.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/spring-tx/6.0.4/spring-tx-6.0.4.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/spring-beans/6.0.4/spring-beans-6.0.4.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/spring-core/6.0.4/spring-core-6.0.4.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/spring-jcl/6.0.4/spring-jcl-6.0.4.jar:
+                   /Users/hectornavarro/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:
+                   /Users/hectornavarro/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/spring-aspects/6.0.4/spring-aspects-6.0.4.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.0.2/spring-boot-starter-web-3.0.2.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/boot/spring-boot-starter/3.0.2/spring-boot-starter-3.0.2.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/boot/spring-boot/3.0.2/spring-boot-3.0.2.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.0.2/spring-boot-autoconfigure-3.0.2.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.0.2/spring-boot-starter-logging-3.0.2.jar:
+                   /Users/hectornavarro/.m2/repository/ch/qos/logback/logback-classic/1.4.5/logback-classic-1.4.5.jar:
+                   /Users/hectornavarro/.m2/repository/ch/qos/logback/logback-core/1.4.5/logback-core-1.4.5.jar:
+                   /Users/hectornavarro/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.19.0/log4j-to-slf4j-2.19.0.jar:
+                   /Users/hectornavarro/.m2/repository/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar:
+                   /Users/hectornavarro/.m2/repository/org/slf4j/jul-to-slf4j/2.0.6/jul-to-slf4j-2.0.6.jar:
+                   /Users/hectornavarro/.m2/repository/org/yaml/snakeyaml/1.33/snakeyaml-1.33.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.0.2/spring-boot-starter-json-3.0.2.jar:
+                   /Users/hectornavarro/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.1/jackson-databind-2.14.1.jar:
+                   /Users/hectornavarro/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.1/jackson-annotations-2.14.1.jar:
+                   /Users/hectornavarro/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.1/jackson-core-2.14.1.jar:
+                   /Users/hectornavarro/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.14.1/jackson-datatype-jdk8-2.14.1.jar:
+                   /Users/hectornavarro/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.14.1/jackson-datatype-jsr310-2.14.1.jar:
+                   /Users/hectornavarro/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.14.1/jackson-module-parameter-names-2.14.1.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.0.2/spring-boot-starter-tomcat-3.0.2.jar:
+                   /Users/hectornavarro/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.5/tomcat-embed-core-10.1.5.jar:
+                   /Users/hectornavarro/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.5/tomcat-embed-el-10.1.5.jar:
+                   /Users/hectornavarro/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.5/tomcat-embed-websocket-10.1.5.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/spring-web/6.0.4/spring-web-6.0.4.jar:
+                   /Users/hectornavarro/.m2/repository/io/micrometer/micrometer-observation/1.10.3/micrometer-observation-1.10.3.jar:
+                   /Users/hectornavarro/.m2/repository/io/micrometer/micrometer-commons/1.10.3/micrometer-commons-1.10.3.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/spring-webmvc/6.0.4/spring-webmvc-6.0.4.jar:
+                   /Users/hectornavarro/.m2/repository/org/springframework/spring-expression/6.0.4/spring-expression-6.0.4.jar:
+                   /Users/hectornavarro/.m2/repository/org/mariadb/jdbc/mariadb-java-client/3.0.10/mariadb-java-client-3.0.10.jar
+  io.imagina.test.TestRegion
+
+/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home/bin/java
+    -javaagent:/Users/hectornavarro/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/223.8617.56/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=50502
+              :/Users/hectornavarro/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/223.8617.56/IntelliJ IDEA CE.app/Contents/bin
+    -Dfile.encoding=UTF-8
+    -classpath /Users/hectornavarro/IdeaProjects/test/target/classes:
+               /Users/hectornavarro/.m2/repository/org/hibernate/orm/hibernate-core/6.1.6.Final/hibernate-core-6.1.6.Final.jar:
+               /Users/hectornavarro/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.0.0/jakarta.persistence-api-3.0.0.jar:
+               /Users/hectornavarro/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.0/jakarta.transaction-api-2.0.0.jar:
+               /Users/hectornavarro/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar:
+               /Users/hectornavarro/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.2.Final/hibernate-commons-annotations-6.0.2.Final.jar:
+               /Users/hectornavarro/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar:
+               /Users/hectornavarro/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:
+               /Users/hectornavarro/.m2/repository/net/bytebuddy/byte-buddy/1.12.18/byte-buddy-1.12.18.jar:
+               /Users/hectornavarro/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1.jar:
+               /Users/hectornavarro/.m2/repository/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.jar:
+               /Users/hectornavarro/.m2/repository/org/glassfish/jaxb/jaxb-runtime/3.0.2/jaxb-runtime-3.0.2.jar:
+               /Users/hectornavarro/.m2/repository/org/glassfish/jaxb/jaxb-core/3.0.2/jaxb-core-3.0.2.jar:
+               /Users/hectornavarro/.m2/repository/org/glassfish/jaxb/txw2/3.0.2/txw2-3.0.2.jar:
+               /Users/hectornavarro/.m2/repository/com/sun/istack/istack-commons-runtime/4.0.1/istack-commons-runtime-4.0.1.jar:
+               /Users/hectornavarro/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.0/jakarta.inject-api-2.0.0.jar:
+               /Users/hectornavarro/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:
+               /Users/hectornavarro/.m2/repository/org/mariadb/jdbc/mariadb-java-client/3.0.10/mariadb-java-client-3.0.10.jar
+    io.imagina.test.TestRegion
+
+mvn compile
+mvn package
+jar tf ./target/App-1.0-SNAPSHOT.jar
+java -classpath $HOME/.m2/repository/org/hibernate/orm/hibernate-core/6.1.6.Final/hibernate-core-6.1.6.Final.jar:$HOME/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.2.Final/hibernate-commons-annotations-6.0.2.Final.jar:$HOME/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.0.0/jakarta.persistence-api-3.0.0.jar:$HOME/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.0/jakarta.transaction-api-2.0.0.jar:$HOME/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar:$HOME/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar:$HOME/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:$HOME//.m2/repository/net/bytebuddy/byte-buddy/1.12.18/byte-buddy-1.12.18.jar:$HOME//.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/3.0.1/jakarta.xml.bind-api-3.0.1.jar:$HOME/.m2/repository/com/sun/activation/jakarta.activation/2.0.1/jakarta.activation-2.0.1.jar:$HOME/.m2/repository/org/glassfish/jaxb/jaxb-runtime/3.0.2/jaxb-runtime-3.0.2.jar:$HOME/.m2/repository/org/glassfish/jaxb/jaxb-core/3.0.2/jaxb-core-3.0.2.jar:$HOME/.m2/repository/org/glassfish/jaxb/txw2/3.0.2/txw2-3.0.2.jar:$HOME/.m2/repository/com/sun/istack/istack-commons-runtime/4.0.1/istack-commons-runtime-4.0.1.jar:$HOME/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.0/jakarta.inject-api-2.0.0.jar:$HOME/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:$HOME/.m2/repository/org/mariadb/jdbc/mariadb-java-client/3.0.10/mariadb-java-client-3.0.10.jar:./target/App-1.0-SNAPSHOT.jar io.imagina.App
+
+
+Feb 21, 2023 2:57:25 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.1.6.Final
+Feb 21, 2023 2:57:26 PM org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver resolveEntity
+WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-mapping. Use namespace http://www.hibernate.org/dtd/hibernate-mapping instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+Feb 21, 2023 2:57:28 PM org.hibernate.boot.jaxb.internal.MappingBinder doBind
+WARN: HHH90000028: Support for `<hibernate-mappings/>` is deprecated [RESOURCE : io/imagina/entity/Region.hbm.xml]; migrate to orm.xml or mapping.xml, or enable `hibernate.transform_hbm_xml.enabled` for on the fly transformation
+Feb 21, 2023 2:57:28 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using built-in connection pool (not intended for production use)
+Feb 21, 2023 2:57:28 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: Loaded JDBC driver class: org.mariadb.jdbc.Driver
+Feb 21, 2023 2:57:28 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001012: Connecting with JDBC URL [jdbc:mariadb://mdb-srv1:3306/hrdb]
+Feb 21, 2023 2:57:28 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=hr}
+Feb 21, 2023 2:57:28 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Feb 21, 2023 2:57:28 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH10001115: Connection pool size: 20 (min=1)
+Feb 21, 2023 2:57:28 PM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl logSelectedDialect
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+Feb 21, 2023 2:57:30 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+Region [1] : Europe
+Region [2] : Americas
+Region [3] : Asia
+Region [4] : Middle East and Africa
+
+sudo tail -f /var/log/mysql/mysql.log
+
+230221 20:03:52     31 Connect  hr@dev-cli.global-bridge on hrdb using TCP/IP
+                    31 Query    set autocommit=0
+                    31 Query    SELECT @@character_set_database
+                    31 Query    select @@lower_case_table_names
+                    31 Query    set autocommit=1
+230221 20:03:53     31 Query    set autocommit=0
+                    31 Query    select r1_0.region_id,r1_0.region_name from regions r1_0
+230221 20:03:54     31 Query    COMMIT
+                    31 Query    set autocommit=1

@@ -1,0 +1,23 @@
+# global docker compose variables
+IMAGINA_DOMAIN = imagina.io
+IMAGINA_SUBNET = 172.80.0.0/16
+
+# mariadb server variables
+MDBSRV1_NAME = mdb-srv1
+MDBSRV2_NAME = mdb-srv2
+MDBSRV1_IP_ADDR = 172.80.0.11
+MDBSRV2_IP_ADDR = 172.80.0.12
+
+# tomcat server variables
+TMCSRV1_NAME = tmc-srv1
+TMCSRV2_NAME = tmc-srv2
+TMCSRV1_IP_ADDR = 172.80.0.21
+TMCSRV2_IP_ADDR = 172.80.0.22
+
+# nginx server variables
+NGXSRV_NAME = ngx-srv
+NGXSRV_IP_ADDR = 172.80.0.30
+
+# developer client variables
+DEVCLI_NAME = dev-cli
+DEVCLI_IP_ADDR = 172.80.0.31
